@@ -1,5 +1,6 @@
 ![image of wireframe]
-(imgs/wireframe-blog-index.PNG)
+(imgs/wireframe-blog-index.png)
+
 
 What is a wireframe?
 A wireframe is a visual blueprint of the information heirarchy. The basic design elements are mapped out and positioned accordingly as to give the developer an idea of what he or she is building.
