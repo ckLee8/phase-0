@@ -1,0 +1,55 @@
+html {
+  background-color: white;
+}
+
+body {
+	color: #000080;
+}
+
+a:link {
+	color: #800080;
+}
+
+a:visited {
+	color: #ff0000;
+}
+
+div {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+.small {
+	font-size: .7em;
+}
+
+h2,h4,h5 {
+	font-weight: bold; font-size: 1.2em; text-align: center;
+
+}
+
+.line {
+	height: 1px; background: black; border-bottom: .5px solid #313030;
+}
+
+#larger {
+	font-size: 2em;
+}
+
+footer {
+	text-align: center;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+It is important to be mindful of the relative path to the stylesheet. 
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+Not so many tricks. Lots of the designing was trial and error. We tried different values and saw the results and adjusted accordingly.
+What CSS did you use to modify the element style (like size, color, etc.)
+We targetted html tags for most of the editing, but some instances it was necessary to create classes and ids.
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+Yes. We utilized classes and ids when targetting html tags wouldn't work. This was the case for line breaks, changing font size for the desicriptive text for links, and creating larger font for B and H.
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I think the actual site might of had simpler code. No css was utilized. I believe semantically, our code was more sensible. I believe if the website was any more complex, they developer would have wasted a lot of time coding the way they did.
+*/
