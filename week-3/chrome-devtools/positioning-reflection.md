@@ -9,6 +9,7 @@ Padding = a transparent area around the content. Border = a border that goes aro
 What was your impression of this challenge overall? (love, hate, and why?)
 Was annoying at times. I felt like it should have been an easier exercise, but was made difficult for no good reason.
 
+
 ![1](imgs/1.png)
 ![2](imgs/2.png)
 ![3](imgs/3.png)
