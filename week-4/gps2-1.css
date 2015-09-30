@@ -1,0 +1,34 @@
+header {    
+    width: 100%;
+}
+header h1 {
+    background-color: #4B90C9;
+    margin: 0;
+    padding: 1.7em;
+    color: white;
+}
+header p {
+    background-color: #AABECF;
+    margin: 0;
+    padding: 1.2em;
+}
+.column-1, .column-2 {
+    
+    width: 40%;
+    display: inline-block;
+}
+
+.column-1 {
+    margin-left: 10%;
+}
+.column-2 {
+    margin-right: 5%;
+    vertical-align: top;
+}
+footer {
+    width: 100%;
+    background-color: #AABECF;
+    margin: 0;
+    padding: 1.3em;
+}
+
