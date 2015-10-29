@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Isaac Lee
+// This challenge took me [#] hours. 2 hours
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -63,13 +63,39 @@ var officers = {
 }
 
 // Pseudocode
-
+// 1. Create function that will go through every vote and tally votes by person and position.
+// 2. Modify or create a new property within the object votecount every time a vote is tallied.
+// 3. Modify the position properties within the officers object to reflect those who got the most votes.
 
 // __________________________________________
 // Initial Solution
 
-
-
+// Initial Solution
+// function tally(ballots) {
+//   for (var voter in ballots) {
+//     for (var office in ballots[voter]) 
+//       if (voteCount[office][ballots[voter][office] 
+//       voteCount[office][ballots[voter][office]] =1;
+//       if (voteCount.president.hasOwnProperty(ballots[voter].president) == false){
+//           console.log (ballots[voter])
+//           voteCount.president[ballots[voter]] = 1; 
+//       }
+//       if (voteCount[office][ballots[voter]] > 0) {
+//           voteCount[office][ballots[voter]] +=1 ;
+    
+//   }
+// }
+// function winner(total) {
+//   for (var office in total) {
+//     var max_votes = 0;
+//     for (var cannidate in total[office]) {
+//       if (total[office][cannidate] > max_votes){
+//         officers[office] = cannidate;
+//         max_votes = total[office][cannidate];
+//       }
+//     }
+//   }
+// }
 
 
 
@@ -77,7 +103,33 @@ var officers = {
 // __________________________________________
 // Refactored Solution
 
+function tally(ballots) {
+  for (var voter in ballots) {
+    for (var office in ballots[voter]) {
+        if (voteCount[office][ballots[voter][office]]) {
+            voteCount[office][ballots[voter][office]] += 1;
+        }
+        else {
+            voteCount[office][ballots[voter][office]] = 1;
+        }
+    }
+  }
+}
 
+function winner(total) {
+  for (var office in total) {
+    var max_votes = 0;
+    for (var cannidate in total[office]) {
+      if (total[office][cannidate] > max_votes){
+        officers[office] = cannidate;
+        max_votes = total[office][cannidate];
+      }
+    }
+  }
+}
+
+tally(votes);
+winner(voteCount);
 
 
 
@@ -86,8 +138,12 @@ var officers = {
 // Reflection
 
 
-
-
+// What did you learn about iterating over nested objects in JavaScript?
+// accessing the correct property and value can be very tricky with large sets like this one. very easy to lose track.
+// Were you able to find useful methods to help you with this?
+// Not really. Just the good old for .. in... loop.
+// What concepts were solidified in the process of working through this challenge?
+// My looping and iterating through nested data structures / objects is getting better with each day.
 
 
 // __________________________________________
